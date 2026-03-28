@@ -149,6 +149,12 @@ void inserirElemento()
 
 void excluirElemento()
 {
+
+	if (primeiro == NULL) {
+		cout << "Lista vazia." << endl;
+		return;
+	}
+
 	int valor;
 	cout << "Digite o elemento a excluir: " << endl;
 	cin >> valor;
