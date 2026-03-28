@@ -129,7 +129,7 @@ void inserirElemento()
 	novo->prox = NULL;
 
 	if (posicaoElemento(novo->valor) != NULL) {
-		cout << "Elemento " << novo->valor << "já existe na lista. " << endl;
+		cout << "Elemento " << novo->valor << " ja existe na lista. " << endl;
 		free(novo);
 		return;
 	}
@@ -162,7 +162,7 @@ void excluirElemento()
 	cin >> valor;
 
 	if (posicaoElemento(valor) == NULL) {
-		cout << "ELEMENTO NÃO ENCONTRADO." << endl;
+		cout << "ELEMENTO NAO ENCONTRADO." << endl;
 	} else {
 		if (primeiro->valor == valor) {
 			NO* aRemover = primeiro; // elemento apontando para o nó atual
@@ -197,7 +197,7 @@ void buscarElemento()
 	if (posicaoElemento(valor) != NULL) {
 		cout << "ENCONTRADO." << endl;
 	} else {
-		cout << "ELEMENTO NÃO ENCONTRADO." << endl;
+		cout << "ELEMENTO NAO ENCONTRADO." << endl;
 	}
 }
 
