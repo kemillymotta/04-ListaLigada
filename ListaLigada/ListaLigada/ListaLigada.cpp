@@ -130,6 +130,8 @@ void inserirElemento()
 
 	if (posicaoElemento(novo->valor) != NULL) {
 		cout << "Elemento " << novo->valor << "já existe na lista. " << endl;
+		free(novo);
+		return;
 	}
 
 	if (primeiro == NULL)
